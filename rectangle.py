@@ -5,7 +5,10 @@ def area(a, b):
 
     '''Проверяет тип чисел a, b, возвращает переменную типа str с сообщением об ошибке'''
     if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
-    
+        raise TypeError("Ошибка, было введено не число")
+    '''Проверяет числа на знак, возвращает переменную типа str с сообщением об ошибке'''
+    if (a <= 0) or (b <= 0):
+        raise ValueError("Ошибка, было введено не число")
     return a * b
 
 def perimeter(a, b):
