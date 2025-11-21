@@ -23,9 +23,9 @@ jobs:
       with:
         python-version: '3.9'
 
-    - name: Run all unit tests
+    - name: Run unit tests
       run: |
-        for test_file in test_*.py; do
-          echo "Running $test_file"
-          python "$test_file"
-        done
+        python test_circle.py
+        python test_rectangle.py
+        python test_square.py
+        python test_triangle.py
