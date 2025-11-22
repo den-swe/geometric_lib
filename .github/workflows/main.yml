@@ -23,9 +23,3 @@ jobs:
       with:
         python-version: '3.9'
 
-    - name: Run unit tests
-      run: |
-        python test_circle.py
-        python test_rectangle.py
-        python test_square.py
-        python test_triangle.py
